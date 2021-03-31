@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<head>
+    <title>The Silica Programming Language</title>
+</head>
+<style>
+    .bounding-box {
+    background-image: url(silica-gel.png);
+    background-size: contain;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    }
+</style>
+
+<body style="margin: 0%;">
+    <div class='gel' style="
+    height:100%; 
+    width:100%; 
+    margin:0; 
+    padding:0; 
+    position:absolute;">
+        <div style="
+            position: relative;
+            margin-left: auto;
+            margin-right: auto">
+            <img src="silica-gel.png" style="
+                height: 100%;
+                width: 100%;"/> 
+            <a style="
+                height: 19.4%;
+                width: 39.9%;
+                top: 22.6%;
+                left: 29.0%;
+                position: absolute;" href="/"></a>
+            <a style="
+                height: 7.2%;
+                width: 24.6%;
+                top: 44.6%;
+                left: 46.6%;
+                position: absolute;" href="/"/></a>
+            <a style="
+                height: 6.7%;
+                width: 32.2%;
+                top: 54.1%;
+                left: 39.1%;
+                position: absolute;" href="syntax.html"/></a>
+            <a style="
+                height: 6.9%;
+                width: 30.9%;
+                top: 62.4%;
+                left: 39.9%;
+                position: absolute;" href="https://github.com/lix1rr/silica-lang"/></a>
+            <a style="
+                height: 7.2%;
+                width: 29.0%;
+                top: 71.7%;
+                left: 42.0%;
+                position: absolute;" href="about.html"/></a>
+        </div>
+        <script>
+            function onResize(event) {
+                var gel = document.getElementsByClassName('gel')[0];
+                var width = gel.clientWidth;
+                var height = gel.clientHeight;
+                var div  = gel.getElementsByTagName('div')[0];
+                var size = Math.min(width, height)
+                div.style.height = size + "px";
+                div.style.width = size + "px";
+            }
+            window.addEventListener('resize', onResize);
+            onResize();
+        </script>
+    </div>
+</body>
